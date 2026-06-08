@@ -42,6 +42,7 @@ def search_tool(query: str)->str:
 #agent toolbox
 tools = [search_tool, calculator_tool]
 
+#llm decides the tool
 tool_choice = llm.invoke(
     f"""
     question: {question}

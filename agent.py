@@ -57,7 +57,7 @@ agent_executor = AgentExecutor(
     tools=tools,
     verbose = True,
     max_iterations = 5,
-    handle_parsing_error=True
+    handle_parsing_errors=True
 )
 
 while True:
